@@ -1,0 +1,16 @@
+[global]
+ApplicationName=blog
+AwsCredentialFile=c:/Users/Clive\.elasticbeanstalk\aws_credential_file
+DevToolsEndpoint=git.elasticbeanstalk.us-west-2.amazonaws.com
+EnvironmentName=blog-env
+EnvironmentTier=WebServer::Standard::1.0
+EnvironmentType=LoadBalanced
+InstanceProfileName=aws-elasticbeanstalk-ec2-role
+OptionSettingFile=c:\Users\Clive\documents\github\blog\.elasticbeanstalk\optionsettings.blog-env
+RdsDeletionPolicy=Delete
+RdsEnabled=Yes
+RdsSourceSnapshotName=
+Region=us-west-2
+ServiceEndpoint=https://elasticbeanstalk.us-west-2.amazonaws.com
+SolutionStack=64bit Amazon Linux 2014.03 v1.0.2 running PHP 5.5
+
