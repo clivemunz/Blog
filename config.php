@@ -1,8 +1,8 @@
 <?php
 // These variables define the connection information for your MySQL database
-$username = "ebroot";
-$password = "screen12";
-$host = "aa1lrr3ggn2qifj.c8oedelipixe.us-west-2.rds.amazonaws.com";
+$username = "root";
+$password = "Clars123@";
+$host = "localhost";
 $dbname = "techblog";
 
 //$dsn = "mysql:host={$host};dbname={$dbname};charset=utf8";    , $dsn

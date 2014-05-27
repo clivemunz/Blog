@@ -1,5 +1,3 @@
-
-//Not working Donno Why.
 <script type="text/javascript">
     <?php if(isset($_SESSION['Login.Error'])) { ?>
 
