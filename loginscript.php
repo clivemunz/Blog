@@ -46,7 +46,8 @@ if(!empty($_POST)){
         }
     }
     else{
-        print("Login Failed.");
+        $refer = $_SERVER['HTTP_REFERER'];
+        $_SESSION["Login.Error"] = 'Invalid credentials'; header("Location:$refer"); exit();
         $submitted_username = htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');
     }
 }

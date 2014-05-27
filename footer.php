@@ -1,3 +1,15 @@
+
+//Not working Donno Why.
+<script type="text/javascript">
+    <?php if(isset($_SESSION['Login.Error'])) { ?>
+
+    $(function() {
+        $('#Login').modal('show');
+        )};
+
+    <?php } ?>
+</script>
+
 <div class = "navbar navbar-inverse navbar-fixed-bottom">
     <div class = "container">
 
@@ -9,33 +21,58 @@
             <span class="icon-bar"></span>
         </button>
 
-        <div class="collapse navbar-collapse navFooterCollapse">
-            <ul class = "nav navbar-nav navbar-right">
-                <li class="<?php echo($page == "register" ? "active" : "")?>"><a href="register.php">Register</a> </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Log In <strong class="caret"></strong></a>
-                    <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-                        <form action="loginscript.php" method="post">
-                            Username:<br />
-                            <input type="text" name="username" value="<?php echo $submitted_username; ?>" />
-                            <br /><br />
-                            Password:<br />
-                            <input type="password" name="password" value="" />
-                            <br /><br />
-                            <input type="submit" class="btn btn-info" value="Login" />
-                            <br /><br />
-                        </form>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
+        <?php if(empty($_SESSION['user'])): ?>
+            <div class="collapse navbar-collapse navFooterCollapse">
+                <ul class = "nav navbar-nav navbar-right">
+                    <li class="<?php echo($page == "register" ? "active" : "")?>"><a href="register.php">Register</a> </li>
+                    <li><a href="#Login" data-toggle="modal">Login</a></li>
+                </ul>
+            </div>
+        <?php else: ?>
+            <div class="collapse navbar-collapse navFooterCollapse">
+                <ul class = "nav navbar-nav navbar-right">
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </div>
+        <?php endif; ?>
 
     </div>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<div id="Login" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <form class="form-inline" id="loginform" action="loginscript.php" method="post">
+                <div class="modal-header text-center">
+                    <h3><?php if(isset($_SESSION['Login.Error'])){ echo $_SESSION['Login.Error']; unset($_SESSION['Login.Error']);}else{ echo 'Login';}   ?></h3>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label control-label">Username:</label>
+                        <div >
+                            <input class="form-control" id="userBox" type="text" name="username" value="<?php echo $submitted_username; ?>" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label control-label">Password:</label>
+                        <div >
+                            <input class="form-control" type="password" name="password" value="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-danger" data-dismiss="modal">Cancel</a>
+                    <input type="submit" class="btn btn-info" value="Login" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.js"></script>
+
 </body>
 </html>
