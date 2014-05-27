@@ -1,7 +1,7 @@
 <script type="text/javascript">
     <?php if(isset($_SESSION['Login.Error'])) { ?>
 
-    $(function() {
+    function() {
         $('#Login').modal('show');
         )};
 
@@ -68,9 +68,6 @@
         </div>
     </div>
 </div>
-
-<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="js/bootstrap.js"></script>
 
 </body>
 </html>

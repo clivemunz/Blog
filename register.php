@@ -81,29 +81,30 @@ if(!empty($_POST))
 
 <?php $page = 'register'; ?>
 <?php include('header.php');?>
-    <div class="container hero-unit">
-        <h1>Register</h1> <br /><br />
-        <form class="form-horizontal" action="register.php" method="post">
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Username:</label>
-                <div class="col-sm-10">
-                    <input type="text" name="username" value="" />
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Register</h1> <br /><br />
+            <form class="form-horizontal" action="register.php" method="post">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Username:</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="username" value="" />
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Email: <strong style="color:darkred;">*</strong></label>
-                <div class="col-sm-10">
-                    <input type="text" name="email" value="" />
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="email" value="" />
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Password:</label>
-                <div class="col-sm-10">
-                    <input type="password" name="password" value="" /> <br /><br />
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password" name="password" value="" /> <br /><br />
+                    </div>
                 </div>
-            </div>
-            <p style="color:darkred;">* Not necessary.</p><br />
-            <input type="submit" class="btn btn-info" value="Register" />
-        </form>
+                <input type="submit" class="btn btn-info" value="Register" />
+            </form>
+        </div>
     </div>
 <?php include('footer.php');?>

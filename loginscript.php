@@ -44,11 +44,15 @@ if(!empty($_POST)){
             header("Location: admin.php");
             die("Redirecting to: admin.php");
         }
+        else{
+            header("Location: home.php");
+            die("Redirecting to: home.php");
+        }
     }
     else{
-        $refer = $_SERVER['HTTP_REFERER'];
-        $_SESSION["Login.Error"] = 'Invalid credentials'; header("Location:$refer"); exit();
         $submitted_username = htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');
+        $_SESSION["Login.Error"] = 'Invalid credentials'; header("Location:home.php");
+        exit();
     }
 }
 ?>
