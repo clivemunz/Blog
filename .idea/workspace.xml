@@ -71,7 +71,7 @@
       <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="7" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+            <state line="21" column="60" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -98,7 +98,7 @@
       <file leaf-file-name="home.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="45" selection-start="463" selection-end="463" vertical-scroll-proportion="0.24637681" vertical-offset="0" max-vertical-offset="2346">
+            <state line="14" column="82" selection-start="546" selection-end="546" vertical-scroll-proportion="0.26532888" vertical-offset="0" max-vertical-offset="2346">
               <folding />
             </state>
           </provider>
@@ -698,13 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="55" selection-start="503" selection-end="503" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="714">
@@ -712,9 +705,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="60" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="463" selection-end="463" vertical-scroll-proportion="0.24637681" vertical-offset="0" max-vertical-offset="2346">
+        <state line="14" column="82" selection-start="546" selection-end="546" vertical-scroll-proportion="0.26532888" vertical-offset="0" max-vertical-offset="2346">
           <folding />
         </state>
       </provider>

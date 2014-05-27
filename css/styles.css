@@ -1,5 +1,5 @@
 #intro {
-    background: url('http://i.imgur.com/ABUpi1P.jpg') 100% fixed;
+    background: url('http://i.imgur.com/ABUpi1P.jpg') 50% 0 fixed;
     height: 400px;
     margin: 0 auto;
     width: 100%;
@@ -9,7 +9,7 @@
     background-size: cover;
 }
 #home {
-    background: url('http://i.imgur.com/ABUpi1P.jpg') 100% fixed;
+    background: url('http://i.imgur.com/ABUpi1P.jpg') 50% 0 fixed;
     height: 400px;
     margin: 0 auto;
     width: 100%;
@@ -19,7 +19,7 @@
     background-size:cover;
 }
 #about {
-    background: url('http://i.imgur.com/eAWGO4S.jpg') 100% fixed;
+    background: url('http://i.imgur.com/eAWGO4S.jpg') 50% 0 fixed;
     height: 400px;
     margin: 0 auto;
     width: 100%;
