@@ -1,12 +1,6 @@
-<script type="text/javascript">
-    <?php if(isset($_SESSION['Login.Error'])) { ?>
 
-    function() {
-        $('#Login').modal('show');
-        )};
+<?php if(isset($_SESSION['Login.Error'])) {echo "<script type='text/javascript'>$('#Login').modal('show');}</script>";}?>
 
-    <?php } ?>
-</script>
 
 <div class = "navbar navbar-inverse navbar-fixed-bottom">
     <div class = "container">

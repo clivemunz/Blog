@@ -26,6 +26,7 @@
         }); // close out script
         </script>
 
+
     <section id="intro" data-speed="6" data-type="background" class="text-center">
             <h1>Welcome To Clive's Blog</h1>
             <p class="lead">This is my personal blog where I write about various interests of mine. </p>

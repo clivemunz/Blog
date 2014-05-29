@@ -84,7 +84,7 @@ if(!empty($_POST))
     <div class="container">
         <div class="jumbotron">
             <h1>Register</h1> <br /><br />
-            <form class="form-horizontal" action="register.php" method="post">
+            <form class=" form-horizontal" action="register.php" method="post">
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Username:</label>
                     <div class="col-sm-10">
